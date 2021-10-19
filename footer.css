@@ -1,0 +1,125 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+ul, li {
+    list-style-type: none;
+    margin-bottom: 40px;
+    color: orangered;
+    font-size: 30px;
+}
+
+h2{
+
+    color:orangered;
+    text-decoration: underline;
+    margin-bottom: 50px;
+    font-family: 'Pacifico';
+    font-size: 60px;
+
+}
+
+footer{
+    width: 100%;
+    background-repeat: no-repeat;
+    border-top: orangered 5px solid;
+    border-bottom: orangered 5px solid;
+    background-image:url(../img/bg-footer.jpg);
+    background-size: cover;
+    }
+
+#contenu-footer{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+
+.bloc-footer{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ width: 170px;
+}
+
+
+    /**horaires*/
+
+
+#bloc-footer-horaires {
+    margin-top: 0px;
+}
+#logo-empire-dev {
+    display: flex;
+    align-self: center;
+}
+#logo-empire-dev img {
+    width: 200px
+}
+
+
+@media screen and (max-width:425px) { 
+
+    #contenu-footer{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+        flex-wrap: wrap;
+        align-items: center !important;
+        
+        
+        
+        
+    }
+
+    #logo-empire-dev{
+        display: none;
+
+    }
+}
+
+@media screen and (max-width:2560px) { 
+
+    #contenu-footer{
+        display: flex;
+        align-items: flex-start;
+       }   
+    
+    .bloc-footer{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin-top: 0px;
+    } 
+}
+
+@media screen and (max-width:1024px) {
+
+.bloc-footer h2{
+    font-size: 30px;
+    justify-content: space-around;
+    
+}
+
+#logo-empire-dev{
+
+    display: none;
+
+}    
+}
+    
+
+
+    
+
+    
+
+
+
+
+
+
