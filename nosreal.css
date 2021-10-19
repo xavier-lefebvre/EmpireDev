@@ -1,18 +1,17 @@
-* {
-	padding: 0;
-	margin: 0;
-	text-decoration: none;
-	list-style: none;
-	box-sizing: border-box;
-}
+
+
 body {
+
 	font-family: monserrat;
+	margin: auto;
+	background-image:url(images/fod.jpg);
 }
 nav {
 	background: black;
 	height: 80px;
 	width: 100%;
 }
+
 label.logo{
 	color: white;
 	font-size: 35px;
@@ -20,6 +19,7 @@ label.logo{
 	padding: 0 100px;
 	font-weight: bold;
 }
+
 nav ul{
 	float: right;
 	margin-right: 20px;
@@ -35,22 +35,31 @@ nav ul li a{
 	padding: 7px 13px;
 	border-radius: 3px;
 	text-transform: uppercase;
+	text-decoration: none;
 }
+
+
 a.active,a:hover{
 	background: orange;
 	transition: .5s;
-
 }
-h2 {
+/* ---Titre--- */
+
+.titre{
+	background-color: orange;
+}
+
+h2{
 	text-align: center;
-	line-height: 10em;
-	background: orange;
 }
 
 #para1{
 	text-align: center;
 	line-height: 2em;
 }
+
+/* ---Gallery--- */
+
 .swing {
 	animation: swing ease-in-out 1s infinite alternate;
 	transform-origin: center -20px;
@@ -72,7 +81,7 @@ h2 {
 	border-right: none;
 	transform: rotate(45deg);
 }
-/* nail */
+
 .swing:before{
 	content: '';
 	position: absolute;
@@ -87,7 +96,12 @@ h2 {
 	0% { transform: rotate(3deg); }
 	100% { transform: rotate(-3deg); }
 }
-#Capture1,#Capture2,#Capture3,#Capture4,#Capture5 {
-	margin-right: 64px;
-	margin-left: 64px;
+
+@media screen and (max-width: 1044px) {
+	ul{
+		display: none;
+	}
+	label.logo {
+		padding: 0000;
+	}
 }
