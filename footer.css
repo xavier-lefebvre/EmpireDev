@@ -4,24 +4,6 @@
     padding: 0;
 }
 
-
-ul, li {
-    list-style-type: none;
-    margin-bottom: 40px;
-    color: orangered;
-    font-size: 30px;
-}
-
-h2{
-
-    color:orangered;
-    text-decoration: underline;
-    margin-bottom: 50px;
-    font-family: 'Pacifico';
-    font-size: 60px;
-
-}
-
 footer{
     width: 100%;
     background-repeat: no-repeat;
@@ -30,6 +12,15 @@ footer{
     background-image:url(../img/bg-footer.jpg);
     background-size: cover;
     }
+
+    footer h2{
+
+    color:orangered;
+    text-decoration: underline;
+    margin-bottom: 50px;
+    font-family: 'Pacifico';
+    font-size: 60px;
+  }
 
 #contenu-footer{
     display: flex;
@@ -45,6 +36,16 @@ footer{
  flex-direction: column;
  width: 170px;
 }
+
+.bloc-footer ul li{
+
+
+    list-style-type: none;
+    margin-bottom: 40px;
+    color: orangered;
+    font-size: 30px;
+}
+
 
 
     /**horaires*/
