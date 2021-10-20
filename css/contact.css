@@ -1,0 +1,452 @@
+body {
+    background-image: url(../images/background-contact.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    
+}
+
+
+section, aside {
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #000000;
+    color: #ffffff;
+    
+}
+
+/*main {
+    background: #ffffff;
+}*/
+
+header {
+    background: orange;
+    text-align: center;
+}
+
+.hero {
+    background: #d22b1f;
+}
+
+.banner {
+    
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+
+.center {
+    text-align: center;
+}
+
+.content {
+    background: #f8f8f8;
+    border-radius: 20px;
+    border: 1px solid #b6b6b6;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+}
+
+.content h2 {
+    font-family: 'pacifico', serif;
+    
+}
+
+.content-b {
+    background: rgb(25, 26, 36);
+    border-radius: 20px;
+}
+
+.info-contact {
+    height: 250px;
+    width: auto;
+    margin: 50px 50px 50px 50px;
+    
+}
+
+
+
+.fas {
+    font-size: xx-large;
+    padding: 10%;
+    color: black;
+    
+}
+
+.fas.fa-phone {
+    color: orange;
+}
+
+.sidebar {
+    border: 1px solid #000000;
+    background: #673ab7;
+}
+
+/*footer {
+    border: 1px solid #000000;
+    background: #616161;
+}*/
+
+.wrapper {
+    margin: auto;
+    max-width: 75rem;
+}
+
+@media screen and (min-width: 640px){
+    .flex-container {
+        display: flex;
+    }    
+
+    .content, .content-b {
+        flex: 1;
+        
+    }
+    
+    .sidebar {
+        flex: 0 1 300px;
+        
+    }
+}
+
+form {
+    margin: auto;
+    max-width: fit-content;
+}
+
+.contact-form {
+    padding: 50px 0px 50px 0px;
+}
+
+input[type=submit] {
+    border: 1px dotted #999;
+    border-radius: 0;
+    -webkit-appearance: none;
+  }
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Map google responsive */
+iframe, object, embed {
+    max-width: 100%;
+       
+}
+
+.contact-map {
+    
+    padding: 0px 0px 50px 0px;
+    
+}
+
+/* hamburger /
+/* [Grand ecran] */
+/* (A) Wrapper */
+#hamnav {
+    width: 100%;
+    background: #000;
+}
+  
+  /* (B) menu horizontal */
+  #hamitems {
+       display: flex;
+       
+       
+       
+}
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px; 
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+#hamitems a:not(.logo),  footer .bloc-footer li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+  #hamitems a:not(.logo):hover {
+       
+       background: orange;
+       transition: .5s;
+       border-radius: 10px;
+             
+       
+     }
+
+.logo {
+    font-size: xx-large;
+    font-family: "pacifico", sans-serif;
+    color: orange;
+}
+   
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { display: none; }
+
+
+
+
+  /* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+
+
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      background: orange;
+      font-style: normal;
+      font-size: 1.4em;
+      padding: 15px;
+      border-radius: 5px;
+      
+      max-width: max-content;    
+      text-align: center;
+    }
+
+    #hamnav { text-align: center;}
+
+
+
+       /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+    #hamnav input:checked ~ #hamitems a.logo { display: none; }
+
+    
+    
+  }
+  
+
+/* La navbar de Florien
+nav {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	background: black;
+	height: 80px;
+	width: 100%;
+	
+}
+label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+			
+}
+
+nav ul li a{
+	color:  white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	
+}
+
+a.active,a:hover{
+	background: orange;
+	transition: .5s;
+
+}
+
+
+/* Le Footer */
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    width: 100%;
+    background-repeat: no-repeat;
+    border-top: orangered 5px solid;
+    border-bottom: orangered 5px solid;
+    background-image:url(../images/bg-footer.jpg);
+    background-size: cover;
+    }
+
+    footer h2{
+
+    color:orangered;
+    text-decoration: underline;
+    margin-bottom: 50px;
+    font-family: 'Pacifico';
+    font-size: 25px;
+  }
+
+#contenu-footer{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+
+.bloc-footer{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ width: 170px;
+}
+
+.bloc-footer ul li {
+
+
+    list-style-type: none;
+    margin-bottom: 40px;
+    color: white;
+    font-size: 18px;
+}
+
+.liste-contact {
+    list-style-type: none;
+}
+
+.fab {
+    font-size: x-large;
+    color: white;
+}
+
+
+
+
+
+    /**horaires*/
+
+
+#bloc-footer-horaires {
+    margin-top: 0px;
+}
+#logo-empire-dev {
+    display: flex;
+    align-self: center;
+}
+#logo-empire-dev img {
+    width: 200px
+}
+
+
+@media screen and (max-width:425px) { 
+
+    #contenu-footer{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+        flex-wrap: wrap;
+        align-items: center !important;
+        
+        
+        
+        
+    }
+
+    #logo-empire-dev{
+        display: none;
+
+    }
+}
+
+@media screen and (max-width:2560px) { 
+
+    #contenu-footer{
+        display: flex;
+        align-items: flex-start;
+       }   
+    
+    .bloc-footer{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin-top: 0px;
+    } 
+}
+
+@media screen and (max-width:1024px) {
+
+.bloc-footer h2{
+    font-size: 30px;
+    justify-content: space-around;
+    
+}
+
+#logo-empire-dev{
+
+    display: none;
+     
+
+}    
+}
+
+
