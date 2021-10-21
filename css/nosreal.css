@@ -4,7 +4,7 @@ body {
 
 	font-family: monserrat;
 	margin: auto;
-	background-image:url(images/fod.jpg);
+	background-image:url(../css/images/fod.jpg);
 }
 nav {
 	background: black;
