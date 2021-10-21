@@ -1,0 +1,90 @@
+/* hamburger /
+/* [Grand ecran] */
+/* (A) Wrapper */
+#hamnav {
+    width: 100%;
+    background: #000;
+}
+  
+  /* (B) menu horizontal */
+  #hamitems {
+       display: flex;
+       
+       
+       
+}
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 3px 50px 3px 50px;
+    width: 50%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+#hamitems a:not(.logo),  footer .bloc-footer li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+  #hamitems a:not(.logo):hover {
+       
+       background: orange;
+       transition: .5s;
+       border-radius: 10px;
+             
+       
+     }
+
+.logo {
+    font-size: xx-large;
+    font-family: "pacifico", sans-serif;
+    color: orange;
+}
+   
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { display: none; }
+
+
+
+
+  /* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+
+
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      background: orange;
+      font-style: normal;
+      font-size: 1.4em;
+      padding: 15px;
+      border-radius: 5px;
+      
+      max-width: max-content;    
+      text-align: center;
+    }
+
+    #hamnav { text-align: center;}
+
+
+
+       /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+    #hamnav input:checked ~ #hamitems a.logo { display: none; }
+
+    
+    
+  }
